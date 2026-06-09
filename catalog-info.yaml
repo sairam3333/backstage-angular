@@ -4,7 +4,7 @@ metadata:
   name: backstage-angular
   description: Angular frontend for backstage testing
   annotations:
-    github.com/project-slug: elite/backstage-angular
+    github.com/project-slug: sairam3333/backstage-angular
 spec:
   type: website
   lifecycle: production

@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: elite-frontend-team
+  description: Frontend Development Team
+spec:
+  type: team
+  profile:
+    displayName: Elite Frontend Team
+  children: []
