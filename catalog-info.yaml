@@ -8,6 +8,6 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: user:development/guest
+  owner: elite-frontend-team
   consumesApis:
     - catalog-api
