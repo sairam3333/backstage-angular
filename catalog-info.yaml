@@ -9,3 +9,5 @@ spec:
   type: website
   lifecycle: production
   owner: user:development/guest
+  consumesApis:
+    - catalog-api
