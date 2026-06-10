@@ -7,10 +7,10 @@ on:
 
 env:
   PROJECT_ID: backstage-test-499007
-  CLUSTER_NAME: angular-cluster
+  CLUSTER_NAME: backstage-cluster
   CLUSTER_LOCATION: asia-south1-a
-  REPOSITORY: angular-repo
-  IMAGE_NAME: angular-app
+  REPOSITORY: backstage
+  IMAGE_NAME: backstage-angular
 
 jobs:
   deploy:
