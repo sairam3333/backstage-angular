@@ -32,14 +32,18 @@ jobs:
       - name: Setup GCloud
         uses: google-github-actions/setup-gcloud@v2
 
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v4
+
       - name: Configure Docker
         run: |
           gcloud auth configure-docker asia-south1-docker.pkg.dev --quiet
 
       - name: Get GKE Credentials
-        run: |
-          gcloud container clusters get-credentials $CLUSTER_NAME \
-          --zone $CLUSTER_LOCATION
+        uses: google-github-actions/get-gke-credentials@v2
+        with:
+        cluster_name: ${{ env.CLUSTER_NAME }}
+        location: ${{ env.CLUSTER_LOCATION }}
 
       - name: Build Docker Image
         run: |
